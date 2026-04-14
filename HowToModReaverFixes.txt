@@ -1,0 +1,31 @@
+To edit the Reaver Fixes mod to make those cannons sing again:
+
+Go to your Age of Wonders 4 folder, usually:
+C:\Program Files (x86)\Steam\steamapps\common\Age of Wonders 4
+
+In there you'll find PackageManager.exe. Open it
+
+In PackageManager, go to File -> Open, and open the ReaverFixes mod folder, which is somewhere in:
+C:\Program Files (x86)\Steam\steamapps\workshop\content/<SomeRandomStringOfNumber>
+You'll need to dig through to find ReaverFixes and open 'reaverArtillery.acp'
+
+Okay you're doing great, finding the things is the hardest part.
+
+Now that ReaverArtillery is loaded in PackageManager, go to 'Tools' -> 'Resource Editor'
+
+This will launch Resource Editor, where the magic happens. You're almost done at this point.
+
+In Resource Editor, open:
+C:\Program Files (x86)\Steam\steamapps\common\Age of Wonders 4\Content\EmpiresAndAshes\Packs\Unit_Properties\Upgrades_Cultures_UnitProperties_EmpiresAndAshes.rpk
+
+On the left-hand side you'll see a long list of units. If you scroll down look for 'Fire Magelock Cannon - Ability' and click it
+
+It should show another scrolly menu. In the new scrolly menu, find the section called 'Ability Use', and change:
+'Cooldown' from 1 to 0
+'Starting Cooldown' from 1 to 0
+
+Save this file in ResourceEditor (just a Ctrl+S will do). You can exit ResourceEditor now
+
+Save again in PackageManager (another Ctrl+S will do). You should see the 'build number' increase in PackageManager
+
+and then launch the game with the mod!
